@@ -46,9 +46,9 @@ class FirstViewController: UIViewController {
     @IBAction func ButtonPressed(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         if let secondVc = storyBoard.instantiateViewController(identifier: "SecondViewController") as? SecondViewController {
-           // navigationController?.pushViewController(secondVc, animated: true)
+           navigationController?.pushViewController(secondVc, animated: true)
             //navigationController?.present(secondVc, animated: true, completion: nil)
-            present(secondVc, animated: true, completion: nil)
+            //present(secondVc, animated: true, completion: nil)
             
             //mark: 1. present works with or without navigation controller , but to push a VC we always need a navigation controller 
         }
